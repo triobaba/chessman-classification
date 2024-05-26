@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  chessman_api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.api
+    container_name: chessman_api
+    ports:
+      - "8000:8000"
+    networks:
+      - chessman_net
+
+  chessman_streamlit:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.streamlit
+    container_name: chessman_streamlit
+    ports:
+      - "8501:8501"
+    networks:
+      - chessman_net
+
+networks:
+  chessman_net:
+    driver: bridge
+

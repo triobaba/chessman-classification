@@ -1,0 +1,14 @@
+tensorflow==2.16.1
+keras==3.3.3
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.8.4
+scikit-learn==1.4.2
+flask==3.0.3
+fastapi==0.111.0
+uvicorn==0.29.0
+streamlit==1.34.0
+docker-compose==1.29.2
+seaborn==0.13.2
+certifi==2024.2.2
+PyYAML==5.3.1
